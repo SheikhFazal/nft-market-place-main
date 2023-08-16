@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dark-theme {
+  --backgroundcolor: #000000;
+  --txtcolor: #FFFFFF;
+  --border: 1px solid rgba(221, 221, 221, 0.171) !important
+}
+
+.light-theme {
+  --backgroundcolor: #FFFFFF;
+  --txtcolor: #000000;
+  --border: 1px solid rgba(0, 0, 0, 0.171) !important
+}
+
+body {
+  background: var(--backgroundcolor) !important;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2 {
+  color: var(--txtcolor);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--txtcolor);
+  line-height: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txtcolor);
+}
+
+a:hover {
+  color: unset;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section,
+footer {
+  padding: 60px 0px;
+}
+
+/* =========== custom scroll-bar ========= */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #343444;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: linear-gradient(-45deg, #e250e5, #4b50e6, #e250e5, #4b50e6);
+}

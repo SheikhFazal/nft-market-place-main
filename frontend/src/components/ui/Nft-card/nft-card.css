@@ -1,0 +1,44 @@
+
+.p {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.single__nft__card{
+  width: 300px;
+  height:365px;
+  min-width: 300px;
+  min-height: 365px;
+}
+
+@media only screen and (max-width: 992px) {
+  .nft__title {
+    font-size: 10px ;
+  }
+
+  .creator__info h6 {
+    font-size: 10px;
+  }
+
+  .creator__info p {
+    font-size: 20px;
+  }
+
+  .bid__btn {
+    padding: 4px 20px;
+    font-size: 10px;
+  }
+  .history__link a {
+    font-size: 20px;
+  }
+
+
+.nft__img{
+  height: 180px !important;
+}
+  
+
+
+}

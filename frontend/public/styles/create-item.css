@@ -1,0 +1,63 @@
+.rounded {
+  margin-top: 220px !important;
+}
+
+.form__input input,
+.form__input textarea {
+  width: 100%;
+  padding: 7px 25px;
+  color: var(--txtColor);
+  font-size: 0.8rem;
+  background: transparent;
+  border: var(--border);
+  outline: none;
+  border-radius: 5px;
+}
+
+.form__input {
+  margin-bottom: 15px;
+}
+
+.form__input label {
+  color: var(--txtColor);
+  margin-bottom: 10px;
+}
+
+.all__category__filter select,
+.all__items__filter select,
+.filter__right select {
+  padding: 8px 25px;
+  font-size: 0.9rem;
+  color: var(--txtColor);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #343444;
+  border-radius: 5px;
+}
+
+.form__input .upload__input {
+  padding: 40px 25px;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .create__item {
+    margin-top: 15px;
+  }
+}
+
+.button_create {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: inline-flex;
+
+
+}
