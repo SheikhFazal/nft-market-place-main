@@ -1,4 +1,3 @@
-
 .p {
   width: 250px;
   white-space: nowrap;
@@ -6,16 +5,23 @@
   text-overflow: ellipsis;
 }
 
-.single__nft__card{
+.single__nft__card {
   width: 300px;
-  height:365px;
+  /* height:365px; */
   min-width: 300px;
   min-height: 365px;
 }
 
+.nft__img {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 992px) {
   .nft__title {
-    font-size: 10px ;
+    font-size: 10px;
   }
 
   .creator__info h6 {
@@ -34,11 +40,7 @@
     font-size: 20px;
   }
 
-
-.nft__img{
-  height: 180px !important;
-}
-  
-
-
+  .nft__img {
+    height: 180px !important;
+  }
 }

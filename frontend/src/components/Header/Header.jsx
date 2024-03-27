@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./header.css";
 import { Container } from "reactstrap";
-import images from "../../assets/images/kk.png"
+import images from "../../assets/images/kk.png";
 import { NavLink, Link } from "react-router-dom";
-import { DragSwitch } from 'react-dragswitch'
-import 'react-dragswitch/dist/index.css'
+import { DragSwitch } from "react-dragswitch";
+import "react-dragswitch/dist/index.css";
 const NAV__LINKS = [
   {
     display: "Home",
@@ -30,12 +30,11 @@ const NAV__LINKS = [
 
 const Header = (props) => {
   const headerRef = useRef(null);
-  const [checked, setChecked] = useState(false)
+  const [checked, setChecked] = useState(false);
   const menuRef = useRef(null);
 
-
   useEffect(() => {
-    props.toogleTheme()
+    props.toogleTheme();
   }, [checked]);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -60,12 +59,10 @@ const Header = (props) => {
     <header className="header" ref={headerRef}>
       <Container>
         <div className="navigation">
-          <div className="logo">
+          <div className="logo" >
             <span>
-              <img src={images} width="100" height="100" alt="Logo" />
+              <img src={'nft-false-logo.jpg'} width="100" height="100" style={{borderRadius:'100%'}} alt="Logo" />
             </span>
-
-
           </div>
 
           <div className="nav__menu" ref={menuRef} onClick={toggleMenu}>
@@ -82,12 +79,15 @@ const Header = (props) => {
                   </NavLink>
                 </li>
               ))}
-              <DragSwitch checked={checked} onColor="black" onChange={(e) => {
-                setChecked(e)
-              }} />
+              <DragSwitch
+                checked={checked}
+                onColor="black"
+                onChange={(e) => {
+                  setChecked(e);
+                }}
+              />
             </ul>
           </div>
-
         </div>
       </Container>
     </header>

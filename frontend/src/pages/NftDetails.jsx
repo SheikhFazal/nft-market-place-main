@@ -24,9 +24,9 @@ const NftDetails = (props) => {
   const [showModal, setShowModal] = useState(false);
   const [loctionVal, setLocationVal] = useState(null);
 
-  useEffect(() => {
-    setLocationVal(window.location.href)
-  }, []);
+  // useEffect(() => {
+  //   setLocationVal(window.location.href)
+  // }, []);
 
   console.log('url', loctionVal)
   const handleCopyUrl = () => {
@@ -112,7 +112,7 @@ const NftDetails = (props) => {
 
                   : <button
                     className="bid__btn d-flex align-items-center gap-1"
-                    onClick={() => buyNft(nft)}
+                    // onClick={() => buyNft(nft)}
                   >
                     <i class="ri-shopping-bag-line"></i> BUY
                   </button>
@@ -131,7 +131,7 @@ const NftDetails = (props) => {
                   title="copy to clipboard"
                   style={{ marginTop: 20 }}
                   className="bid__btn d-flex align-items-center gap-1"
-                  onClick={handleCopyUrl}
+                  // onClick={handleCopyUrl}
                 > Share
                 </button>
               }

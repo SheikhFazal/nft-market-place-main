@@ -33,8 +33,8 @@ const AD_NftCard = (props) => {
 
   return (
     <div className="single__nft__card">
-      <div className="nft__img">
-        <img src={image} alt="this is iamge here" className="w-100" />
+      <div className="nft__img" style={{height:'300px'}}>
+        <img src={image} alt="this is iamge here" style={{height:'100%',width:'100%'}} />
       </div>
       
       <div className="nft__content">
@@ -66,7 +66,7 @@ const AD_NftCard = (props) => {
          <div className=" mt-3 d-flex align-items-center justify-content-between">
           <button
             className="bid__btn d-flex align-items-center gap-1"
-            onClick={() => withdrawbid(nft)}
+            // onClick={() => withdrawbid(nft)}
           >
             <i class="ri-shopping-bag-line"></i>Withdraw Bid</button>
 

@@ -60,7 +60,9 @@ function TModel ({ setTModal, nft  }) {
           />
         </div>
 
-        <button className="place__bid-btn"  onClick={transfer}>Tranfer</button>
+        <button className="place__bid-btn"  
+        // onClick={transfer}
+        >Tranfer</button>
       </div>
     </div>
   );

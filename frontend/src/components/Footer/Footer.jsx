@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import "./footer.css";
-import images from "../../assets/images/kk.png"
+import images from "../../assets/images/kk.png";
 
 import { Link } from "react-router-dom";
 
@@ -70,36 +70,41 @@ const Footer = () => {
         <Row>
           <Col lg="3" md="6" sm="6" className="mb-4">
             <div className="logo">
-            <img src={images}  width="100" height="100" alt="Logo"/>
-            <p> 
-            Ouranos Exchange is part of Ouranos LLC, USA. Developed by NFT enthusiasts and providing an easy way to "Mint" your NFT, Buy/Sell/Auction on Ethereum Blockchain.
-            It is a fast growing NFT marketplace.
-
-            </p>
+              <img
+                src={"nft-false-logo.jpg"}
+                width="100"
+                height="100"
+                alt="Logo"
+                style={{borderRadius:'100%'}}
+              />
+              <p>
+                {/* Ouranos Exchange is part of Ouranos LLC, USA. Developed by NFT
+                enthusiasts and providing an easy way to "Mint" your NFT,
+                Buy/Sell/Auction on Ethereum Blockchain. It is a fast growing
+                NFT marketplace. */}
+                NFT Market Place
+              </p>
             </div>
           </Col>
 
-     
-
-        
-
           <Col lg="3" md="6" sm="6" className="mb-4">
-          
             <div className="social__links d-flex gap-3 align-items-center ">
-        
               <span>
-                <a  href="https://www.instagram.com/ouranosexchange/" target="_blank">
+                <a
+                  href="https://www.instagram.com/ouranosexchange/"
+                  target="_blank"
+                >
                   <i class="ri-instagram-line"></i>
                 </a>
               </span>
               <span>
-              <a href="https://twitter.com/ExchOuranos" target="_blank">
+                <a href="https://twitter.com/ExchOuranos" target="_blank">
                   <i class="ri-twitter-line"></i>
-                  </a>
+                </a>
               </span>
-            
+
               <span>
-              <a href="https://discord.gg/Nrpm4rAcu9" target="_blank">
+                <a href="https://discord.gg/Nrpm4rAcu9" target="_blank">
                   <i class="ri-discord-line"></i>
                 </a>
               </span>
@@ -108,8 +113,7 @@ const Footer = () => {
 
           <Col lg="12" className=" mt-4 text-center">
             <p className="copyright">
-            Copyright, All rights reserved Ouranos LLC.   2022
-
+              Copyright, All rights reserved NFT LLC. 2022
             </p>
           </Col>
         </Row>

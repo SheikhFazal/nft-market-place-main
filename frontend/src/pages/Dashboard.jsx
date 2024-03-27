@@ -1,5 +1,5 @@
 import React from "react";
-import "./dashboard.css"
+import "./dashboard.css";
 import CommonSection from "../components/ui/Common-section/CommonSection";
 import DashboardNfts from "../components/ui/dashboardNfts/DashboardNfts";
 import DashboardItem from "../components/ui/dashboardItem/DashboardItem";
@@ -11,11 +11,11 @@ const Dashboard = () => {
     <>
       <CommonSection title="Dashboard" />
       <section className="dashboardContainer">
-        <DashboardNfts/>
-        <DashboardAuctions/>
+        <DashboardNfts />
+        <DashboardAuctions />
 
-        <DashboardItem/>
-        <DashboardAuctioned/>
+        <DashboardItem />
+        <DashboardAuctioned />
       </section>
     </>
   );

@@ -32,8 +32,8 @@ const D_NftCard = (props) => {
  
   return (
     <div className="single__nft__card">
-      <div className="nft__img">
-        <img src={image} alt="this is iamge here" className="w-100" />
+      <div className="nft__img" style={{height:"300px"}}>
+        <img src={image} alt="this is iamge here" style={{height:'100%',width:'100% '}}/>
       </div>
       
       <div className="nft__content">
@@ -83,7 +83,7 @@ const D_NftCard = (props) => {
          
 
           {showModal && <SModal setShowModal={setShowModal} nft={nft}/>}
-          {showRModal && <RModal setRModal={setTModal} nft={nft}/>}
+          {showRModal && <RModal setRModal={setRModal} nft={nft}/>}
           {showTModal && <TModel setTModal={setTModal} nft={nft}/>}
 
 

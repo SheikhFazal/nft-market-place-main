@@ -75,7 +75,9 @@ async function placebid() {
         
      
 
-        <button className="place__bid-btn"  onClick={placebid}>Place a Bid</button>
+        <button className="place__bid-btn"
+          // onClick={placebid}
+          >Place a Bid</button>
       </div>
     </div>
   );

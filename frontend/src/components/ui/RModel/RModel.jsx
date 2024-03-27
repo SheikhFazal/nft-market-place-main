@@ -86,7 +86,9 @@ async function listNFTForSale() {
           />
         </div>
 
-        <button className="place__bid-btn"  onClick={listNFTForSale}>Reauction</button>
+        <button className="place__bid-btn"  
+        // onClick={listNFTForSale}
+        >Reauction</button>
       </div>
     </div>
   );
