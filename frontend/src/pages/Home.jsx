@@ -14,11 +14,9 @@ const Home = () => {
     
       {/* <div className="bgHome"> */}
       {/* <HeroSection /> */}
-
       <LiveAuction />
-      <Trending />
+      <Trending /> 
       {/* <StepSection /> */}
-
       {/* </div> */}
       </section>
     
